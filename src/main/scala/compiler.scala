@@ -159,4 +159,4 @@ abstract class AbstractCompiler(src: String)
   }
 }
 
-object DefaultCompiler extends AbstractCompiler("less-rhino-1.3.3.js")
+object DefaultCompiler extends AbstractCompiler("less-rhino-1.4.0.js")

@@ -101,7 +101,7 @@ object Plugin extends sbt.Plugin {
     inConfig(c)(lessSettings0 ++ Seq(
       sourceDirectory in lesskey <<= (sourceDirectory in c) { _ / "less" },
       resourceManaged in lesskey <<= (resourceManaged in c) { _ / "css" },
-      target in lesskey <<= (target in c) { _ / "less-1.3.0" },
+      target in lesskey <<= (target in c) { _ / "less-1.4.0" },
       cleanFiles in lesskey <<= (resourceManaged in lesskey, target in lesskey)(_ :: _ :: Nil),
       watchSources in lesskey <<= (unmanagedSources in lesskey)
     )) ++ Seq(
